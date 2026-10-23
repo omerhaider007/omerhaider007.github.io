@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omer Haider · AI Researcher</title>
+    <meta name="description" content="Research and have fun with AI. Dedicated to improving game AI.">
+    <meta property="og:title" content="Omer Haider · AI Researcher">
+    <meta property="og:description" content="Research and have fun with AI. Dedicated to improving game AI.">
+    <meta property="og:url" content="https://omerhaider007.github.io">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="family">
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #1a1a1e;
+            --text-muted: #5a5a62;
+            --accent-color: #0052cc;
+            --accent-hover: #0041a3;
+            --border-color: #e5e5eb;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        mark {
+            background-color: #fff200;
+            color: #000;
+            padding: 0 0.2rem;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        header {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+        }
+        .one-liner {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 540px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            width: max-content;
+            transition: background-color 0.2s ease;
+            margin-bottom: 3rem;
+        }
+        .cta-btn:hover {
+            background-color: var(--accent-hover);
+        }
+        .now-status {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-left: 2px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+        section {
+            margin-top: 5rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-family: var(--font-mono);
+            font-weight: 500;
+        }
+        .featured-item {
+            margin-bottom: 3.5rem;
+        }
+        .featured-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .meta-label {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 0.75rem;
+        }
+        .meta-text {
+            margin-bottom: 0.5rem;
+        }
+        .work-list {
+            list-style: none;
+        }
+        .work-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .work-date {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            margin-right: 1.5rem;
+        }
+        .work-detail {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+        }
+        .contact-links a:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .work-item { flex-direction: column; gap: 0.25rem; }
+            .work-date { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Omer Haider</h1>
+            <p class="one-liner">Research and have fun with AI. Dedicated to evaluating game states, scaling neural architectures, and solving core mechanics to build next-generation machine-learning environments.</p>
+            <a href="mailto:omerhaider007@gmail.com" class="cta-btn">Apply for Summer Internship</a>
+            <p class="now-status">Now: <mark>[What research project or implementation are you shipping this month?]</mark></p>
+        </header>
+
+        <section id="featured">
+            <h2>Featured Projects</h2>
+            
+            <div class="featured-item">
+                <h3 class="featured-title">NatHacks 2026</h3>
+                <span class="meta-label">Problem</span>
+                <p class="meta-text"><mark>[What concrete constraint, performance bottleneck, or algorithm challenge did you encounter at this hackathon?]</mark></p>
+                <span class="meta-label">Decision &amp; Rationale</span>
+                <p class="meta-text"><mark>[What architectural path or approach did you select, and why did it outperform alternative methods?]</mark></p>
+                <span class="meta-label">Result</span>
+                <p class="meta-text"><mark>[What was the final performance metric, system execution accuracy, or scoring output?]</mark></p>
+            </div>
+
+            <div class="featured-item">
+                <h3 class="featured-title">Chess Club Infrastructure</h3>
+                <span class="meta-label">Problem</span>
+                <p class="meta-text"><mark>[What strategic gap, competitive scaling issue, or operational hurdle led you to found the club in 2025?]</mark></p>
+                <span class="meta-label">Decision &amp; Rationale</span>
+                <p class="meta-text"><mark>[How did you design the matching system, curriculum, or structural logic to maintain optimal player engagement?]</mark></p>
+                <span class="meta-label">Result</span>
+                <p class="meta-text"><mark>[What performance, capacity retention metric, or evaluation milestone did the club achieve?]</mark></p>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Chronology</h2>
+            <ul class="work-list">
+                <!-- ADD NEW WORK HERE: copy one item, paste it at the top, edit it -->
+                <li class="work-item">
+                    <span class="work-date">2026</span>
+                    <span class="work-detail">Raised 200,000 Pakistani Rupees for charity through system execution</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>Profile</h2>
+            <p class="about-text">
+                Improving reinforcement learning models in game environments drives my research framework. 
+                My baseline perspective is shaped by systemic engineering parameters drawn from specialized military weaponry technical specifications. 
+                This domain context allows me to model tactical parameters, resource distribution structures, and operational state spaces from an unconventional vector.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:omerhaider007@gmail.com">Email</a>
+                <a href="https://linkedin.com" rel="me">LinkedIn</a>
+                <a href="https://github.com" rel="me">GitHub</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+```<FollowUp>
+I have structured the website code using clean, native CSS and semantic HTML, selecting **Plus Jakarta Sans** and **JetBrains Mono** to create a highly technical, readable layout for a DeepMind reviewer. 
+
+To take this live on your GitHub Pages deployment:
+* Do you need assistance running a quick text confirmation of the placeholders before you commit the `index.html` to your **omerhaider007.github.io** repository?
+* Would you like me to draft your answers to any of the specific **[placeholder questions]** regarding the decisions you made during NatHacks 2026 or the Chess Club launch?
+</FollowUp>
